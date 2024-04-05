@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment4</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<header>
+  <a href="https://www.centennialcollege.ca/">
+    <img src="CentennialCollege.png" alt="Centennial College Logo">
+  </a>
+</header>
+
+<form id="evaluation-form" action="submit_form_destination" method="post">
+
+  <h1>Continuing Education Course/Instructor Evaluation</h1>
+
+  <section>
+    <label for="courseName">Course Name/Code:</label>
+    <input type="text" id="courseName" name="courseName" required><br>
+    
+    <label for="semester">Semester:</label>
+    <select id="semester" name="semester">
+      <option value="fall">Fall</option>
+      <option value="winter">Winter</option>
+      <option value="springSummer">Spring/Summer</option>
+    </select>
+    
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year" required><br>
+    
+    <label for="instructor">Instructor:</label>
+    <input type="text" id="instructor" name="instructor" required><br>
+  </section>
+  
+  <section>
+    <h2>Instructor</h2>
+    <h3>How would you rate the instructor's:</h3>
+    <label for="instructor">1. Knowledge of subjuct?</label>
+    <label><input type="checkbox" name="instructor" value="Excellent"> Excellent</label>
+    <label><input type="checkbox" name="instructor" value="Good"> Good</label>
+    <label><input type="checkbox" name="instructor" value="Fair"> Fair</label>
+    <label><input type="checkbox" name="instructor" value="Not Satisfactory"> Not Satisfactory</label><br>
+
+    <label for="instructor">2. Helpfulness?</label>
+    <label><input type="checkbox" name="instructor" value="Excellent"> Excellent</label>
+    <label><input type="checkbox" name="instructor" value="Good"> Good</label>
+    <label><input type="checkbox" name="instructor" value="Fair"> Fair</label>
+    <label><input type="checkbox" name="instructor" value="Not Satisfactory"> Not Satisfactory</label><br>
+    
+    <label for="instructor">3. Courtesy and respect for all students?</label>
+    <label><input type="checkbox" name="instructor" value="Excellent"> Excellent</label>
+    <label><input type="checkbox" name="instructor" value="Good"> Good</label>
+    <label><input type="checkbox" name="instructor" value="Fair"> Fair</label>
+    <label><input type="checkbox" name="instructor" value="Not Satisfactory"> Not Satisfactory</label><br>
+
+    <label for="instructor">4. Communication skill?</label>
+    <label><input type="checkbox" name="instructor" value="Excellent"> Excellent</label>
+    <label><input type="checkbox" name="instructor" value="Good"> Good</label>
+    <label><input type="checkbox" name="instructor" value="Fair"> Fair</label>
+    <label><input type="checkbox" name="instructor" value="Not Satisfactory"> Not Satisfactory</label><br>
+    
+    <label for="instructor">5. Overall performance?</label>
+    <label><input type="checkbox" name="instructor" value="Excellent"> Excellent</label>
+    <label><input type="checkbox" name="instructor" value="Good"> Good</label>
+    <label><input type="checkbox" name="instructor" value="Fair"> Fair</label>
+    <label><input type="checkbox" name="instructor" value="Not Satisfactory"> Not Satisfactory</label><br>
+  </section>
+  
+  <section>
+    <h2>Course</h2>
+    <label for="Course">6. How would you rate the course materials?</label>
+    <label><input type="checkbox" name="Course" value="Excellent"> Excellent</label>
+    <label><input type="checkbox" name="Course" value="Good"> Good</label>
+    <label><input type="checkbox" name="Course" value="Fair"> Fair</label>
+    <label><input type="checkbox" name="Course" value="Not Satisfactory"> Not Satisfactory</label><br>
+
+    <label for="Course">7. How much did this course meet your expectations?</label>
+    <label><input type="checkbox" name="Course" value="Excellent"> Excellent</label>
+    <label><input type="checkbox" name="Course" value="Good"> Good</label>
+    <label><input type="checkbox" name="Course" value="Fair"> Fair</label>
+    <label><input type="checkbox" name="Course" value="Not Satisfactory"> Not Satisfactory</label><br>
+
+    <label for="Course">8. How would you rate the course materials?</label>
+    <label><input type="checkbox" name="Course" value="Excellent"> Excellent</label>
+    <label><input type="checkbox" name="Course" value="Good"> Good</label>
+    <label><input type="checkbox" name="Course" value="Fair"> Fair</label>
+    <label><input type="checkbox" name="Course" value="Not Satisfactory"> Not Satisfactory</label><br>
+  </section>
+  
+  <section>
+    <h2>General Information</h2>
+    <label for="General_Information">9. Was the course outline reviewed/explained at the begining of your course?</label>
+    <label><input type="checkbox" name="General_Information" value="Yes"> Yes</label>
+    <label><input type="checkbox" name="General_Information" value="No"> No</label>
+    <label><input type="checkbox" name="General_Information" value="Not Sure"> Not Sure</label><br>
+
+    <label for="General_Information">10. Would you recommend this course to a friend with the same interests?</label>
+    <label><input type="checkbox" name="General_Information" value="Yes"> Yes</label>
+    <label><input type="checkbox" name="General_Information" value="No"> No</label>
+    <label><input type="checkbox" name="General_Information" value="Not Sure"> Not Sure</label><br>
+  </section>
+  
+  <section>
+    <h2>Any Other Comments</h2>
+    <label for="comments">11. What is the best thing about this course?</label>
+    <textarea id="comments" name="comments"></textarea>
+  </section>
+
+  <section>
+    <label for="improvement">12. How could we improve this course?</label>
+    <textarea id="improvement" name="improvement"></textarea>
+  </section>
+  
+  <section>
+    <label for="otherComments">13. Other:</label>
+    <textarea id="otherComments" name="otherComments"></textarea>
+  </section>
+  
+  <input type="submit" value="Submit Right Now!">
+  
+  <section>
+    <p>Thank you! We pay attention to your feedback!</p>
+    <p>
+      Web: <a href="http://www.centennialcollege.ca/continuing-education">www.centennialcollege.ca/continuing-education</a>
+    </p>
+    <p>
+      Email: <a href="mailto:continuingeducation@centennialcollege.ca">continuingeducation@centennialcollege.ca</a>
+    </p>
+  </section>
+  
+</form>
+
+</body>
+</html>
